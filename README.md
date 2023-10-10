@@ -1,7 +1,42 @@
+# Use
+
 ## This repository consists of two branches:
 * master - the source code of the React app
-* gh-pages - the React app built from that source code
-  
+* gh-pages - the React app built from that source code, which can be accessed at [https://carey-james.github.io/demo-site-pages/](https://carey-james.github.io/demo-site-pages/).
+
+## To Update the gh-pages branch (and associated site):
+
+### 1. Ensure you have the neded prerequisites installed:
+
+```shell
+$ node --version
+v18.18.0
+$ npm --version
+9.8.1
+$ git --version
+git version 2.42.0.windows.2
+```
+Download and install [Node and npm](https://nodejs.org/en/download) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+### 2. Run Deploy with the updated files:
+
+```shell
+$ npm run deploy
+```
+
+#### 2a. Add a more descriptive commit message:
+
+By default, the new commit will have a message of "Updates". You can use the `-m` option to add a custom commit message. 
+
+```shell
+$ npm run deploy -- -m "Custom commit message goes here."
+```
+
+#### 2b. If the page is not displaying correctly:
+
+If thing's aren't going right, check out this guide here: [github.com/gitname/react-gh-pages](https://github.com/gitname/react-gh-pages).
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
