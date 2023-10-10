@@ -1,10 +1,13 @@
-import logo from './logo.svg';
+import logo from './images/demo-sqs-logo.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div>
+          <img src={logo} alt="The potential SQS logo" style={{width:'200px', height:'200px'}} />
+        </div>
         <h1>
           Statistical Query Service
         </h1>
