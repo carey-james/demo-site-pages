@@ -18,6 +18,12 @@ git version 2.42.0.windows.2
 ```
 Download and install [Node and npm](https://nodejs.org/en/download) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
+Also make sure gh-pages is installed (in dev mode).
+
+```shell
+$ npm install gh-pages --save-dev
+``` 
+
 ### 2. Run Deploy with the updated files:
 
 ```shell
