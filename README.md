@@ -25,6 +25,9 @@ $ npm install gh-pages --save-dev
 $ npm install react-router-dom
 $ npm install --save styled-components
 $ npm install react-icons
+$ npm install react-redux
+$ npm install prop-types
+$ npm install react-dropzone
 ``` 
 
 ### 2. Run Deploy with the updated files:

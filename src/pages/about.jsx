@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
 	return (
-		<div>
-			<h1>
+		<div className='App'>
+			<h1 className='App-header'>
 				About the SQS
 			</h1>
 			<p>

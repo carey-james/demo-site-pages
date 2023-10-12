@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './images/demo-sqs-logo.png';
 import './App.css';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -14,11 +13,11 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route exact path='/' exact element={<Home />} />
-                <Route path='/about' element={<About />} />
-                <Route path='/faq' element={<FAQ />} />
-                <Route path='/glossary' element={<Glossary />} />
-                <Route path='/wizard' element={<Wizard />} />
+                <Route exact path='/demo-site-pages/' exact element={<Home />} />
+                <Route path='/demo-site-pages/about' element={<About />} />
+                <Route path='/demo-site-pages/faq' element={<FAQ />} />
+                <Route path='/demo-site-pages/glossary' element={<Glossary />} />
+                <Route path='/demo-site-pages/wizard' element={<Wizard />} />
             </Routes>
         </Router> 
     );
