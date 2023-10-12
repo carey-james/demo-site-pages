@@ -18,10 +18,13 @@ git version 2.42.0.windows.2
 ```
 Download and install [Node and npm](https://nodejs.org/en/download) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-Also make sure gh-pages is installed (in dev mode).
+Also make sure `gh-pages`, `react-router-dom`, and `styled-components` are installed.
 
 ```shell
 $ npm install gh-pages --save-dev
+$ npm install react-router-dom
+$ npm install --save styled-components
+$ npm install react-icons
 ``` 
 
 ### 2. Run Deploy with the updated files:

@@ -1,22 +1,27 @@
+import React from 'react';
 import logo from './images/demo-sqs-logo.png';
 import './App.css';
+import Navbar from './components/Navbar';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './pages';
+import About from './pages/about';
+import FAQ from './pages/faq';
+import Glossary from './pages/glossary';
+import Wizard from './pages/wizard';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          <img src={logo} alt="The potential SQS logo" style={{width:'200px', height:'200px'}} />
-        </div>
-        <h1>
-          Statistical Query Service
-        </h1>
-        <p>
-          This is a site to demonstrate what a potential SQS site may look like. 
-        </p>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route exact path='/' exact element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/faq' element={<FAQ />} />
+                <Route path='/glossary' element={<Glossary />} />
+                <Route path='/wizard' element={<Wizard />} />
+            </Routes>
+        </Router> 
+    );
 }
 
 export default App;
