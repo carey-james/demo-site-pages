@@ -13,11 +13,7 @@ const UploadButton = (props) => {
 	return (
 		<>
 			<input id='uploadFileInput' type='file' onChange={handleSelection} />
-			<button 
-				id='uploadFileButton'
-				type='button'
-				onClick{() => document.getElementById('uploadFileInput').click()}
-			>
+			<button id='uploadFileButton' type='button' onClick{() => document.getElementById('uploadFileInput').click()}>
 				{text}
 			</button>
 		</>
