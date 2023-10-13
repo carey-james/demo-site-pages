@@ -11,7 +11,7 @@ export const UploadErrors = ({errors, parsed, parseErrors}) => {
 
 	if (errors.length)
 		return (
-			<span ref={ref}>
+			<span>
 				<Alert type='error' heading='Invalid File'>
 					{errors.length > 1 ? (
 						<ul>
@@ -27,7 +27,7 @@ export const UploadErrors = ({errors, parsed, parseErrors}) => {
 		);
 
 	if (!errors.length && !parseErrors) return (
-		<span ref={ref}>
+		<span>
 			<Alert
 				type='success'
 				heading='Congradulations! No Formatting Errors.'
@@ -72,7 +72,7 @@ export default class Upload extends Component {
 					<UploadErrors errors={this.props.errors} parsed={parsed} parseErrors={errorCount} />
 					<div className='container-upload'>
 						<Dropzone disablePreview={true} onDrop={setFile} multiple={false}>
-							{({regRootProps, getInputProps}) => {
+							{({getRootProps, getInputProps}) => {
 								return (
 									<div {...getRootProps({className: 'dropzone ${dropzoneDisabled'})}>
 										<input {...getInputProps()}/>

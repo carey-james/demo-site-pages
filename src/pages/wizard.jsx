@@ -1,4 +1,6 @@
 import React from 'react';
+import Alert from '../components/Alert'
+import UploadContainer from '../containers/UploadForm'
 
 const Wizard = () => {
 	return (
@@ -6,6 +8,11 @@ const Wizard = () => {
 			<h1 className='App-header'>
 				Here is the file prep Wizard!
 			</h1>
+			<div>
+				<>
+					<UploadContainer />
+				</>
+			</div>
 		</div>
 	);
 };
