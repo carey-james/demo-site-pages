@@ -28,6 +28,7 @@ $ npm install react-icons
 $ npm install react-redux
 $ npm install prop-types
 $ npm install react-dropzone
+$ npm install redux-thunk
 ``` 
 
 ### 2. Run Deploy with the updated files:
