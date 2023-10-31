@@ -9,7 +9,7 @@ const middleware = [thunkMiddleware]
 
 const store = createStore(
 	combineReducers({
-		app: appReducer
+		//app: appReducer
 	}),
 	applyMiddleware(...middleware)
 );

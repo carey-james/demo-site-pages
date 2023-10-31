@@ -18,7 +18,7 @@ git version 2.42.0.windows.2
 ```
 Download and install [Node and npm](https://nodejs.org/en/download) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-Also make sure `gh-pages`, `react-router-dom`, and `styled-components` are installed.
+Also make sure `gh-pages`, `react-router-dom`, `styled-components`, `react-icons`, `react-redux`, `prop-types`,`react-dropzone`,`redux-thunk`, and `react-bootstrap` are installed.
 
 ```shell
 $ npm install gh-pages --save-dev
@@ -29,6 +29,7 @@ $ npm install react-redux
 $ npm install prop-types
 $ npm install react-dropzone
 $ npm install redux-thunk
+$ npm install react-bootstrap bootstrap
 ``` 
 
 ### 2. Run Deploy with the updated files:
