@@ -1,14 +1,12 @@
 import React, {useState} from 'react';
 import ReactFileReader from 'react-file-reader';
 import Alert from 'react-bootstrap/Alert';
-import 'react-dropzone-uploader/dist/styles.css';
 import WizardFormatTests from '../wizard_tests/WizardFormatTests';
 
 export default function WizardUploader() {
 	const [file, setFile] = useState();
 	const [fileData, setFileData] = useState({
 		fileName: '',
-		fileContent: '',
 		fileErrors: []
 	});
 	
@@ -23,33 +21,30 @@ export default function WizardUploader() {
 		reader.onload = () => {
 			setFileData({
 				fileName: file.name,
-				fileContent: reader.result
+				fileErrors: WizardFormatTests(reader.result)
 			});
 		};
-
-		setFileData({
-			fileErrors: WizardFormatTests(fileData.fileContent)
-		});
-
 	};
 
 
-	function FormatErrors(fileErrorsArray) {
-		const errorItems = fileErrorsArray?.map((fileError) =>
-			<Alert varient={fileError.varient}>
-				<Alert.Heading>{fileError.title}</Alert.Heading>
-				<p>
-					{fileError.text}
-				</p>
-			</Alert>
-		);
-
-		return "AHDHFL:KJS:LKFDJS";
+	function FormatErrors() {
+		var errorItems = 'Waiting for file...';
+		if (fileData.fileErrors.length > 0){
+			errorItems = fileData.fileErrors?.map((fileError) =>
+				<Alert varient={fileError.varient}>
+					<Alert.Heading>{fileError.title}</Alert.Heading>
+					<p>
+						{fileError.text}
+					</p>
+				</Alert>
+			);
+		}
+		return errorItems;
 	}
 
 
 	return (
-		<div>
+		<div class="d-grid gap-3">
 			<form onSubmit={handleSubmit}>
 				<h1>React File Upload</h1>
 				<input type='file' onChange={handleChange}/>

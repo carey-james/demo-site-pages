@@ -1,9 +1,5 @@
 import React from 'react';
-import {createStore, combineReducers, applyMiddleware} from 'redux';
-import {Provider} from 'react-redux';
-import thunkMiddleware from 'redux-thunk'
 import Alert from '../components/Alert';
-import UploadContainer from '../containers/UploadForm';
 import WizardUploader from '../components/WizardUploader';
 
 /***
