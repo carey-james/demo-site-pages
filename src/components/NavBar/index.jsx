@@ -20,7 +20,7 @@ function NavBar() {
 	        <Navbar.Toggle aria-controls='basic-navbar-nav' />
 	        <Navbar.Collapse id='basic-navbar-nav'>
 	          	<Nav className='me-auto'>
-	            	<Nav.Link href='/demo-site-pages/'>{FaHouse}</Nav.Link>
+	            	<Nav.Link href='/demo-site-pages'>{FaHouse}</Nav.Link>
 	            	<Nav.Link href='/demo-site-pages/about'>About</Nav.Link>
 	            	<Nav.Link href='/demo-site-pages/faq'>FAQ</Nav.Link>
 	            	<NavDropdown title='Resources' id='basic-nav-dropdown'>

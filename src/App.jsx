@@ -21,14 +21,13 @@ function App() {
                 <Row>
                     <Col>
                     <Routes>
-                        <Route exact path='/demo-site-pages/' element={<Home />} />
+                        <Route path='/demo-site-pages/' element={<Home />} />
                         <Route path='/demo-site-pages/about' element={<About />} />
                         <Route path='/demo-site-pages/faq' element={<FAQ />} />
                         <Route path='/demo-site-pages/glossary' element={<Glossary />} />
                         <Route path='/demo-site-pages/about-name-matching' element={<AboutNameMatching />} />
                         <Route path='/demo-site-pages/current-data-availability' element={<CurrentDataAvailability />} />
                         <Route path='/demo-site-pages/wizard' element={<Wizard />} />
-
                     </Routes>
                     </Col>
                 </Row>

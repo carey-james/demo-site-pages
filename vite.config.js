@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     mdx()
   ],
-  base: '/demo-site-pages/'
+  base: '/demo-site-pages/',
 });
