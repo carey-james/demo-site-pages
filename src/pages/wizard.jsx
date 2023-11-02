@@ -4,7 +4,9 @@ import {Provider} from 'react-redux';
 import thunkMiddleware from 'redux-thunk'
 import Alert from '../components/Alert';
 import UploadContainer from '../containers/UploadForm';
+import WizardUploader from '../components/WizardUploader';
 
+/***
 const middleware = [thunkMiddleware]
 
 const store = createStore(
@@ -13,9 +15,14 @@ const store = createStore(
 	}),
 	applyMiddleware(...middleware)
 );
+***/
 
 const Wizard = () => {
 	return (
+		<div>
+			{WizardUploader()}
+		</div>
+/***		
 		<Provider store={store}>
 			<div classname='App'>
 				<h1 className='App-header'>
@@ -28,6 +35,7 @@ const Wizard = () => {
 				</div>
 			</div>
 		</Provider>
+***/
 	);
 };
 

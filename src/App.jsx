@@ -9,6 +9,8 @@ import Home from './pages';
 import About from './pages/about';
 import FAQ from './pages/faq';
 import Glossary from './pages/glossary';
+import AboutNameMatching from './pages/about-name-matching';
+import CurrentDataAvailability from './pages/current-data-availability';
 import Wizard from './pages/wizard';
 
 function App() {
@@ -23,7 +25,10 @@ function App() {
                         <Route path='/demo-site-pages/about' element={<About />} />
                         <Route path='/demo-site-pages/faq' element={<FAQ />} />
                         <Route path='/demo-site-pages/glossary' element={<Glossary />} />
+                        <Route path='/demo-site-pages/about-name-matching' element={<AboutNameMatching />} />
+                        <Route path='/demo-site-pages/current-data-availability' element={<CurrentDataAvailability />} />
                         <Route path='/demo-site-pages/wizard' element={<Wizard />} />
+
                     </Routes>
                     </Col>
                 </Row>
