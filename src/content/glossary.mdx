@@ -1,0 +1,298 @@
+##### Anonymization
+The process of removing or modifying data to reduce the risk of re-identification, while preserving data utility.
+
+
+##### Cell
+Any given record or variable in a record, the intersection of a row and column in a dataset. In the context of microdata, it refers to a specific entry in the data. In the context of tabulation, it refers to the results from a computation on entries in the microdata. Rarely: A subset of records, derived from belonging to a mutually exclusive category.
+
+
+##### Complementary Subgroups
+Distinct subsets of a set based on mutually exclusive variables which, when combined, form the whole of the dataset.
+
+
+##### Complementary Suppression
+Use of privacy preserving methods such as redaction or masking to ensure records cannot be identified by negative inference from the complementary subgroups of a dataset. 
+
+
+##### Data Governance Model
+A combination of policies, people, processes, and technology which controls data access and use, defining data ownership, security, risk management, and compliance with laws and regulations.
+
+
+##### Data Intermediary
+An entity that facilitates sharing of and access to restricted data by third parties. This facilitation may include using Privacy Enhancing Technologies (PETs) in conducting linkages, creating data extracts, or computing statistics. Also known as a Trusted Third Party (TTP) or Honest Broker.
+
+
+##### Data Controller
+The organization that has the ability to control the access and storage of data, as well as what processing is done on that data.
+
+
+##### Data Owner
+The entity that has legal responsibility and control over a dataset.
+
+
+##### Data Provisioning
+A Data Provider permitting access to data for approved uses and users, typically through remote access or secure extracts employing methods that meet the security requirements of a data owner or controller.
+
+
+##### Dataset
+A collection of records which share a common set of variables and dimensions.
+
+
+##### De-duplication
+The process of eliminating redundant data in a dataset; may involve checking for exact or fuzzy matches.
+
+
+##### De-identification
+The process of removing or obscuring identifying values from records to ensure that data subjects cannot be re-identified from the remaining data. Different standards for de-identification exist, such as Safe Harbor and Expert Determination standards from HIPAA.
+
+
+##### Differential Item Functioning
+A source of bias in data analysis where different groups respond differently to a query due to a reason other than what that query was intended to measure. For example, if men and women feel the exact same pain from a given condition, but women interpret “Serious Pain” to occur at a greater threshold than men. 
+
+
+##### Differential Privacy
+A stochastic framework for privacy preserving analysis which guards against significant influence of any one individual on the results.
+
+
+##### Disclosure Avoidance
+Practices to safeguard sensitive information while sharing data, to ensure no data elements are inadvertently shared with parties who should not have access to them. This may include practices such as K-Anonymity, L-Diversity, and T-Closeness.
+
+
+##### Distance to Closest Record (DCR)
+Distance to Closest Record is a comparison of the distribution of synthetic data to the original data it is meant to represent. 
+
+
+##### Distributed Ledger Technology
+The use of a number of ledgers stored on networked devices instead of one local database to ensure data accuracy and security. Blockchains are a type of Distributed Ledger Technology. May be used in place of a Data Intermediary.
+
+
+##### Encryption
+The process of encoding data, usually for secure transmission or storage, so that a key (or passcode) is required to decrypt it and return it to its original, readable state.
+
+
+##### Epsilon
+A symbol used when applying differential privacy, it represents the privacy loss associated with the release of a dataset. See Privacy Loss Budget.
+
+
+##### Extreme-value protection
+A method for protecting privacy of data subjects who are represented by the minimum or maximum values of a given dataset, who may otherwise be at risk for reidentification if those maxima or minima were published in their raw form.
+
+
+##### Fake data
+Artificial data that can be used to test or demonstrate processes without the need to use real data that will have privacy concerns; unlike synthetic data, it is disconnected from any real datasets
+
+
+##### Federated Data Model
+A data management approach where data remain siloed and secured at individual institutions, but are harmonized so queries may be run across the network.
+
+
+##### Fuzzy Matching
+A data linkage relying on probabilistic rather than exact matching, used when there is no unique key (such as a Social Security Number) to link on
+
+
+##### Homomorphic Encryption
+An encryption method that allows mathematical operations to be performed on the data while it remains securely encrypted. Computationally intensive.
+
+
+##### Honest Broker
+See Data Intermediary
+
+
+##### Hybrid data
+Data which is partially original data, but has synthetic data added.
+
+
+##### Identity disclosure
+The event where the identity of a record in an anonymized dataset is revealed or inferred. 
+
+
+##### Imputation
+The estimation of a missing cell. May either be a single value, multiple values, or a probability distribution. 
+
+
+##### k-anonymity
+A dataset of discrete values satisfies k-anonymity if there are a minimum of k-1 duplicates for any potentially identifying combination of fields in the data. 
+
+
+##### Linkage
+The establishment of a mapping between some subset of records of two or more datasets.
+
+
+##### Linked ID
+An identity valid across multiple linked datasets.
+
+
+##### Masking
+The substitution of a predetermined symbol for a particular cell, used in order to prevent disclosure.
+
+
+##### MD5
+A popular Secure Hashing algorithm that performs a functionally one-way conversion of a string of text into a hashed value. One application is for two actors to compare the MD5 values generated by passing the datasets through the algorithm to determine whether they have identical datasets without disclosing any aspect of their data.
+
+
+##### Metadata
+Information about how a given dataset was collected, digitized, processed, evaluated, or otherwise came into its current form.
+
+
+##### Noise
+Probabilistic output with no structure.
+
+
+##### Noise addition
+The incorporation of noise with real data in order to obscure some aspect of that real data.
+
+
+##### Outlier
+A datapoint which does not fit with the overall trend of a dataset.
+
+
+##### Overfitting
+A pernicious situation in predictive analysis in which coincidental patterns in the training dataset have been incorporated into the prediction algorithm.
+
+
+##### Perturbation
+A (typically small) change to an existing datapoint, often intended to aid in anonymization.
+
+
+##### PET
+Privacy Enhancing Technology; any technology applied in a data analysis with the intent of preventing that data analysis from revealing private information about the underlying dataset. Also known as Privacy Preserving Technology (PPT).
+
+
+##### PHI
+Protected Health Information, which is defined under HIPAA to include individually identifiable health information related to health conditions, healthcare, or health care payments and can be used to identify the associated individual.
+
+
+##### PII
+Personally Identifying Information; any information which may be used, alone or in conjunction with other information, to disclose an individual's identity.
+
+
+##### Plaintext
+A means of storing digital data which allows its contents to be easily read by anyone in possession of it. 
+
+
+##### Privacy Loss Budget
+A defined limit of the trade-off between data utility and privacy, for any given application. Often expressed using the symbol Epsilon.
+
+
+##### Privacy Preserving Record Linkage (PPRL)
+Combining records from two or more data sources in such a way as to prevent disclosure.
+
+
+##### Privacy Preserving Technologies (PPTs)
+See PET.
+
+
+##### Private Query Servers
+Computer systems that allow for a limited set of queries on stored data (such as count and attributes for specific groups) while maintaining privacy. May utilize secure multiparty computation or differential privacy.
+
+
+##### Pseudo ID
+Any information not traditionally or legally considered part of "identity" but which is nevertheless sufficiently unique to identify an individual.
+
+
+##### Pseudonymisation
+The replacement of identifying information with artificial identifiers. Sometimes considered to be an outdated approach to privacy due to limits and the potential of re-identification.
+
+
+##### Quasi-Identifiers (QIDs)
+Information that cannot identify a specific person alone but may do so when combinded with other Quasi-Identifiers. Also known as indirect identifiers.
+
+
+##### Query
+A retrieval of data based on specified criteria.
+
+
+##### Random data generation
+The process of generating Fake Data.
+
+
+##### Rare category protection
+Methodology deployed with the intent to prevent the disclosure of rare categories due to the fact that rare categories can readily be used as Quasi-Identifiers (QIDs).
+
+
+##### Redaction
+The removal of sensitive data elements from a dataset.
+
+
+##### Re-identification
+The circumvention of an anonymization procedure which allows the recipients of an anonymized dataset to recuperate some subset of the identities corresponding to records.
+
+
+##### Restricted Data
+Data which cannot be accessed directly by the public, by force of law, ethical convention, or other agreement.
+
+
+##### Rule-based data generation
+The generation of data using an algorithm crafted by hand; used in contradistinction to data created on the basis of a training set.
+
+
+##### Safelisting
+The approval of a given privacy technology or infrastructure element by IT, security, and legal departments, after it has been ensured it satisfies their legal and regulatory requirements.
+
+
+##### Sampling
+The probabilistic selection of a subset of records of a dataset.
+
+
+##### Secure Hashing
+The use of a hashing algorithm (such as MD5) to replace a data element with a seemingly random string of characters which are (for all practical purposes) computationally impossible to revert to the original data element, but trivial to find again using the same algorithm on the original element, which always results in an identical hashed value.
+
+
+##### Secure Multiparty Computation (SMC)
+The technological process which allows parties with independent datasets to conduct a query across both datasets without ever having access to the other’s secure dataset.
+
+
+##### Secure Virtual Enclave
+A computing workspace that allows authorized users to access sensitive datasets securely for analysis without risk of inadvertent disclosure. Also known as a Trusted Execution Environment.
+
+
+##### SLK
+A Statistical Linkage Key, a value either collectable or derivable from other data elements that can be used to connect datasets. The SLK-581 was one such method of deriving a key that was popular in research dealing with Australian health data.
+
+
+##### Smart Contract
+A digital contract document that contains logical rules that allow changing access to data based on predetermined conditions, associated with the use of distributed ledger technologies.
+
+
+##### SMC
+See Secure Multiparty Computation
+
+
+##### Statistical Disclosure Limitation (SDL)
+Methods such as aggregation, rounding, and suppression of results to protect any individuals from being re-identifiable based on statistical results.
+
+
+##### Statistical parity
+When two groups in a dataset have the same average of a given data element.
+
+
+##### Suppression
+The redaction of a component of an analysis, typically in order to prevent that analysis from resulting in a disclosure.
+
+
+##### Synthetic data
+A dataset generated on the basis of one or more training data in such a manner as to avoid any one-to-one correspondence between records of the synthetic dataset and records of any training datasets.
+
+
+##### Target data
+In the context of a Fake Dataset or Synthetic Dataset, the dataset which they are meant to represent, which is typically not directly releasable.
+
+
+##### Threat Model
+An analysis of possible motivations and methods a potential attacker of a datasystem may have.
+
+
+##### Thresholds
+Predefined limits used to categorize when a privacy preserving technology must be used. For example, minimum cell size.
+
+
+##### Token, or Hash
+The value resulting from the use of a Secure Hashing Algorithm.
+
+
+##### Trusted Execution Environment (TEE)
+See Secure Virtual Enclave.
+
+
+##### Zero-Knowledge Proof
+A method of proving possession of knowledge or data, without actually revealing that knowledge or data.

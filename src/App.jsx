@@ -17,7 +17,7 @@ function App() {
     return (
         <Router>
             <Navbar />
-            <Container classname='App-body'>
+            <Container fluid='sm' className='App-body'>
                 <Row>
                     <Col>
                     <Routes>

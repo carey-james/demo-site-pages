@@ -1,4 +1,5 @@
 import React from 'react';
+import GlossaryText from '../content/glossary.mdx';
 
 const Glossary = () => {
 	return (
@@ -6,6 +7,7 @@ const Glossary = () => {
 			<h1 classname='App-header'>
 				Here is a glossary of common data and legal terms you may come accross working with the SQS!
 			</h1>
+			<GlossaryText />
 		</div>
 	);
 };

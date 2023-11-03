@@ -45,7 +45,7 @@ $cyan:     #0dcaf0;
 Theme Updates
 */
 $primary: $georgetownBlue;
-$secondary: $georgetownLightTan;
+$secondary: $georgetownGray;
 $success: $georgetownPistachio;
 $info: $georgetownBabyBlue;
 $warning: $georgetownBurgundy;
@@ -58,16 +58,25 @@ $body-color:                $gray-900;
 $body-bg:                   $georgetownCoolGray;
 
 $body-secondary-color:      rgba($body-color, .75);
-$body-secondary-bg:         $gray-200 !default;
+$body-secondary-bg:         $georgetownLightTan;
 
 $body-tertiary-color:       rgba($body-color, .5) !default;
 $body-tertiary-bg:          $gray-100 !default;
 
 $body-emphasis-color:       $black !default;
 
+// Make our containers a bit thinner
+$container-max-widths: (
+  sm: 440px,
+  md: 620px,
+  lg: 860px,
+  xl: 1040px,
+  xxl: 1220px
+);
+
 
 @import 'bootstrap/scss/bootstrap';
 
 .App-body{
-	padding-top: 10px;
+	padding-top: 5%;
 }

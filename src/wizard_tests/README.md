@@ -9,7 +9,7 @@ The errors should be objects in an array in the following format:
 
 ```js
 [{
-	varient: 'info', // 'success', 'info', 'warning', or 'danger'
+	variant: 'info', // 'success', 'info', 'warning', or 'danger'
 	title: 'Missing SSN',
 	text: 'You are missing an SSN collumn.'
 }]

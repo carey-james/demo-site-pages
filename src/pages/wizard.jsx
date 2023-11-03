@@ -1,37 +1,19 @@
 import React from 'react';
-import Alert from '../components/Alert';
+import Stack from 'react-bootstrap/Stack';
 import WizardUploader from '../components/WizardUploader';
-
-/***
-const middleware = [thunkMiddleware]
-
-const store = createStore(
-	combineReducers({
-		//app: appReducer
-	}),
-	applyMiddleware(...middleware)
-);
-***/
+import WizardText from '../content/wizard.mdx';
 
 const Wizard = () => {
 	return (
 		<div>
+		<Stack gap={3}>
+			<h1 classname='App-header'>
+				Format Wizard
+			</h1>
 			{WizardUploader()}
+			<WizardText />
+		</Stack>
 		</div>
-/***		
-		<Provider store={store}>
-			<div classname='App'>
-				<h1 className='App-header'>
-					Here is the file prep Wizard!
-				</h1>
-				<div>
-					<>
-						<UploadContainer />
-					</>
-				</div>
-			</div>
-		</Provider>
-***/
 	);
 };
 
