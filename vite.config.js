@@ -9,4 +9,5 @@ export default defineConfig({
     mdx()
   ],
   base: '/demo-site-pages/',
+  publicDir: 'public'
 });
