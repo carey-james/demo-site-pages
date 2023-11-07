@@ -12,17 +12,18 @@ export default function WizardFormatTests(fileContents) {
 		errors.push({variant:'warning', title:'Missing Group By Columns', text:'Your file does not have any "Group By" columns  after the Reserved Columns and will not return detailed match results from SQS.'});
 	}
 
+/***
 	//Line-by-line tests
 	const lines = fileContents.split('\n');
 
 	//Test for same number of columns
 	var col_errors = []
 	for (let )
+***/
 
-
-	// If no errors
+	// If no formatting errors at this point, add the no formatting errors message 
 	if (errors.length === 0) {
-		errors.push({variant:'success', title:'No Errors!', text:'Horray! No errors were found!'});
+		errors.push({variant:'success', title:'No Formatting Errors!', text:'Horray! No formatting errors were found!'});
 	}
 
 	return errors;

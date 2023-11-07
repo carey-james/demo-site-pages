@@ -1,3 +1,5 @@
-Partner ID | Tax Year | Social Security Number | First Name | Middle Initial | Last Name | State | Zip Code | Var 1 | Var 2
-3 | 2023 | 999999999 | John | S | Smith | CA | 20001 | A | B
-3 | 2023 | 999999991 | Jane | S | Smith | DC | 20001 | A | C
+Partner ID | Tax Year | Social Security Number | First Name | Middle Initial | Last Name | State | Zip Code | Program | Race | First Language | Fav Color
+3 | 2023 | 999999999 | John | S | Smith | CA | 20001 | A | white | English | blue
+3 | 2023 | 999999991 | Jane | S | Smith | DC | 20001 | A | black | English | green
+3 | 2023 | 999999993 | Jerry | S | Smith | CA | 20001 | A | white | Spanish | blue
+3 | 2023 | 999999992 | Jordan | S | Smith | DC | 20001 | A | black | English | green
